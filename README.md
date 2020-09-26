@@ -10,3 +10,6 @@
 - Docker
 - Kubernetes
 - Scaffold
+
+## To Run:
+1. skaffold dev
