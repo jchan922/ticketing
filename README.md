@@ -12,4 +12,4 @@
 - Scaffold
 
 ## To Run:
-1. skaffold dev
+1. run `skaffold dev` in project root
