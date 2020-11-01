@@ -1,3 +1,4 @@
+# Ingress is creating a controller with routing rules and a load balancer on Google Cloud
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
