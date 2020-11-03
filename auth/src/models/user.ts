@@ -27,6 +27,17 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     }
+}, {
+    // update response object to plain JSON
+    toJSON: {
+        // remap response to update or remove fields
+        transform(doc, ret) {
+            ret.id = ret._id;
+            delete ret._id;
+            delete ret.password;
+            delete ret.__v;
+        }
+    }
 });
 
 userSchema.pre('save', async function(done) {
